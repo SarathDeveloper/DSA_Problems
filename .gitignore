@@ -1,0 +1,22 @@
+# Eclipse & IntelliJ
+.classpath
+.project
+.settings/
+.idea/
+.metadata/
+bin/
+target/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build
+/build/
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+target/
