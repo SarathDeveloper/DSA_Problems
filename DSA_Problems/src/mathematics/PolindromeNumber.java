@@ -1,4 +1,4 @@
-package mathematics;
+package src.mathematics;
 
 public class PolindromeNumber {
 	
