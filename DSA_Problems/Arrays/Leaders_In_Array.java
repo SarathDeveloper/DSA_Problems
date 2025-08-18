@@ -23,6 +23,7 @@ public class Leaders_In_Array {
 			}
 		}
 	}
+	
 	//Naive solution
 	private static void leaders(int[] arr) {
 		// TODO Auto-generated method stub
