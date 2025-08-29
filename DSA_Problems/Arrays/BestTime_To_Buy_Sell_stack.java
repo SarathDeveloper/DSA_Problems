@@ -20,19 +20,15 @@ public class BestTime_To_Buy_Sell_stack {
 	
 	//Optimized solution
 	public static int findMaximumProfitOpt(int[] prices) {
-		int n = prices.length;
-		int maxProfit = 0;
-		int minimumPrice = Integer.MAX_VALUE;
-		for(int i=0 ;i < n; i++ ) {
-			if(prices[i] < minimumPrice) {
-				minimumPrice = prices[i];
-			}
-			else if(prices[i] - minimumPrice > maxProfit) {
-				maxProfit = prices[i] - minimumPrice;
-			}
-		}
-				
-		return maxProfit;
+		int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (int price : prices) {
+            if (price < minPrice)
+                minPrice = price;
+            if (price - minPrice > maxProfit)
+                maxProfit = price - minPrice;
+        }
+        return maxProfit;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
